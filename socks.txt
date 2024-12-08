@@ -1,5 +1,0 @@
-ss://YWVzLTI1Ni1nY206UHVqQTY3NG9pNA@8.210.209.48:36287?plugin=obfs-local;obfs=http;obfs-host=nopqrstuvwxyzA.time.asia.apple.com;obfs-uri=/#%F0%9F%87%AD%F0%9F%87%B0ClawHK%20-%20AkileHK
-ss://YWVzLTI1Ni1nY206UzVvbk5IbDdWbUA4LjIxMC4yMDkuNDg6MzIzMDc#%F0%9F%87%BA%F0%9F%87%B8ClawHK%20-%20AkileUS
-ss://YWVzLTI1Ni1nY206NktwRUpaWkJMVkA4LjIxMC4yMDkuNDg6NTcyMTQ#%F0%9F%87%AD%F0%9F%87%B0ClawHK%20-%20Boil%20-%20FreeNat
-ss://YWVzLTEyOC1nY206VlhQaXBpMjlueE1P@iepl.std.7541.0tk8a3a1q4t94dler.com:152?plugin=obfs-local;obfs=tls;obfs-host=6d9438a21d8d2cb95aa6718ea50951b0185138.wns.windows.com;obfs-uri=/#Dler%20-%20%E9%A6%99%E6%B8%AF%20IEPL%20%5B03%5D%20%5BStd%5D
-ss://YWVzLTEyOC1nY206VlhQaXBpMjlueE1P@iepl.std.8932.0tk8a3a1q4t94dler.com:152?plugin=obfs-local;obfs=tls;obfs-host=6d9438a21d8d2cb95aa6718ea50951b0185138.wns.windows.com;obfs-uri=/#Dler%20-%20%E9%A6%99%E6%B8%AF%20IEPL%20%5B04%5D%20%5BStd%5D
