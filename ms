@@ -3,29 +3,15 @@
         "rules": [
             {
                 "outbound": [
-                    "any"
+                    "节点选择"
                 ],
-                "server": "local"
-            },
-            {
-                "clash_mode": "全局代理",
                 "server": "remote"
-            },
-            {
-                "clash_mode": "全局直连",
-                "server": "local"
             },
             {
                 "rule_set": [
                     "geosite-cn"
                 ],
-                "server": "local"
-            },
-            {
-                "rule_set": [
-                    "category-ads-all"
-                ],
-                "server": "block"
+                "server": "remote"
             }
         ],
         "servers": [
@@ -36,7 +22,7 @@
             },
             {
                 "address": "https://223.5.5.5/dns-query",
-                "detour": "direct",
+                "detour": "节点选择",
                 "tag": "local"
             },
             {
@@ -53,7 +39,7 @@
             "enabled": true
         },
         "clash_api": {
-            "default_mode": "绕过大陆地址",
+            "default_mode": "全局代理",
             "external_controller": "127.0.0.1:9090",
             "secret": ""
         }
@@ -98,7 +84,6 @@
             "type": "selector",
             "tag": "节点选择",
             "outbounds": [
-                "自动选择",
                 "🇭🇰ClawHK-VmissHK",
                 "🇭🇰ClawHK-AkileHK",
                 "🇺🇸ClawHK-AkileUS",
@@ -120,10 +105,6 @@
         {
             "type": "dns",
             "tag": "dns-out"
-        },
-        {
-            "type": "direct",
-            "tag": "direct"
         },
         {
             "type": "block",
@@ -161,8 +142,7 @@
             "method": "chacha20-ietf-poly1305",
             "password": "299b6488-3a0d-4052-9637-98d4e33a0d7a"
         },
-        {
-            "tag": "🇭🇰Dler03Std-VmissHK",
+        {"tag": "🇭🇰Dler03Std-VmissHK",
             "type": "shadowsocks",
             "server": "iepl.std.7541.0tk8a3a1q4t94dler.com",
             "server_port": 19597,
@@ -178,10 +158,6 @@
                 "protocol": "dns"
             },
             {
-                "clash_mode": "全局直连",
-                "outbound": "direct"
-            },
-            {
                 "clash_mode": "全局代理",
                 "outbound": "节点选择"
             },
@@ -190,17 +166,11 @@
                     "geosite-cn",
                     "geoip-cn"
                 ],
-                "outbound": "direct"
+                "outbound": "节点选择"
             },
             {
                 "ip_is_private": true,
-                "outbound": "direct"
-            },
-            {
-                "rule_set": [
-                    "category-ads-all"
-                ],
-                "outbound": "block"
+                "outbound": "节点选择"
             }
         ],
         "rule_set": [
@@ -209,13 +179,6 @@
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
-                "download_detour": "节点选择"
-            },
-            {
-                "tag": "category-ads-all",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ads-all.srs",
                 "download_detour": "节点选择"
             },
             {
