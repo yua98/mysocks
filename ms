@@ -16,7 +16,7 @@
         ],
         "servers": [
             {
-                "address": "1.1.1.1",
+                "address": "8.8.8.8",
                 "detour": "节点选择",
                 "tag": "remote"
             },
