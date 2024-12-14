@@ -81,26 +81,8 @@
     ],
     "outbounds": [
         {
-            "type": "selector",
-            "tag": "节点选择",
-            "outbounds": [
-                "🇭🇰ClawHK-VmissHK",
-                "🇭🇰ClawHK-AkileHK",
-                "🇺🇸ClawHK-AkileUS",
-                "🇭🇰Dler04Std-VmissHK",
-                "🇭🇰Dler03Std-VmissHK"
-            ]
-        },
-        {
-            "type": "urltest",
-            "tag": "自动选择",
-            "outbounds": [
-                "🇭🇰ClawHK-VmissHK",
-                "🇭🇰ClawHK-AkileHK",
-                "🇺🇸ClawHK-AkileUS",
-                "🇭🇰Dler04Std-VmissHK",
-                "🇭🇰Dler03Std-VmissHK"
-            ]
+            "type": "dns",
+            "tag": "dns-out"
         },
         {
             "tag": "🇭🇰ClawHK-VmissHK",
@@ -138,7 +120,8 @@
             "tag": "🇭🇰Dler03Std-VmissHK",
             "type": "shadowsocks",
             "server": "iepl.std.7541.0tk8a3a1q4t94dler.com",
-            "server_port": 19597,"method": "chacha20-ietf-poly1305",
+            "server_port": 19597,
+            "method": "chacha20-ietf-poly1305",
             "password": "299b6488-3a0d-4052-9637-98d4e33a0d7a"
         }
     ],
@@ -146,23 +129,22 @@
         "auto_detect_interface": true,
         "rules": [
             {
-                "outbound": "节点选择",
+                "outbound": "dns-out",
                 "protocol": "dns"
             },
             {
                 "clash_mode": "全局代理",
-                "outbound": "节点选择"
+                "outbound": "🇭🇰ClawHK-VmissHK"
             },
             {
                 "rule_set": [
                     "geosite-cn",
-                    "geoip-cn"
-                ],
-                "outbound": "节点选择"
+                    "geoip-cn"],
+                "outbound": "🇭🇰ClawHK-VmissHK"
             },
             {
                 "ip_is_private": true,
-                "outbound": "节点选择"
+                "outbound": "🇭🇰ClawHK-VmissHK"
             }
         ],
         "rule_set": [
