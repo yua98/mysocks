@@ -6,6 +6,12 @@
                     "节点选择"
                 ],
                 "server": "remote"
+            },
+            {
+                "rule_set": [
+                    "geosite-cn"
+                ],
+                "server": "remote"
             }
         ],
         "servers": [
@@ -132,12 +138,12 @@
             "tag": "🇭🇰Dler03Std-VmissHK",
             "type": "shadowsocks",
             "server": "iepl.std.7541.0tk8a3a1q4t94dler.com",
-            "server_port": 19597,
-            "method": "chacha20-ietf-poly1305",
+            "server_port": 19597,"method": "chacha20-ietf-poly1305",
             "password": "299b6488-3a0d-4052-9637-98d4e33a0d7a"
         }
     ],
-    "route": {"auto_detect_interface": true,
+    "route": {
+        "auto_detect_interface": true,
         "rules": [
             {
                 "outbound": "节点选择",
@@ -148,8 +154,31 @@
                 "outbound": "节点选择"
             },
             {
+                "rule_set": [
+                    "geosite-cn",
+                    "geoip-cn"
+                ],
+                "outbound": "节点选择"
+            },
+            {
                 "ip_is_private": true,
                 "outbound": "节点选择"
+            }
+        ],
+        "rule_set": [
+            {
+                "tag": "geosite-cn",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-cn.srs",
+                "download_detour": "节点选择"
+            },
+            {
+                "tag": "geoip-cn",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/srs/cn.srs",
+                "download_detour": "节点选择"
             }
         ]
     }
