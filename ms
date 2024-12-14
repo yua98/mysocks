@@ -2,9 +2,7 @@
     "dns": {
         "rules": [
             {
-                "outbound": [
-                    "any"
-                ],
+                "outbound": ["any"],
                 "server": "local"
             },
             {
@@ -12,19 +10,11 @@
                 "server": "remote"
             },
             {
-                "clash_mode": "全局直连",
+                "rule_set": ["geosite-cn"],
                 "server": "local"
             },
             {
-                "rule_set": [
-                    "geosite-cn"
-                ],
-                "server": "local"
-            },
-            {
-                "rule_set": [
-                    "category-ads-all"
-                ],
+                "rule_set": ["category-ads-all"],
                 "server": "block"
             }
         ],
@@ -176,10 +166,6 @@
             {
                 "outbound": "dns-out",
                 "protocol": "dns"
-            },
-            {
-                "clash_mode": "全局直连",
-                "outbound": "direct"
             },
             {
                 "clash_mode": "全局代理",
