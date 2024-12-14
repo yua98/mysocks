@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/yua98/mysocks/refs/heads/main/ms
+
+https://cdn.jsdelivr.net/gh/yua98/mysocks@main/ms
