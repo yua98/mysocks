@@ -122,7 +122,7 @@
         {
             "tag": "🇭🇰ClawHK-VmissHK",
             "type": "shadowsocks",
-            "server": "47.242.139.119",
+            "server": "47.243.243.204",
             "server_port": 43162,
             "method": "chacha20-ietf-poly1305",
             "password": "299b6488-3a0d-4052-9637-98d4e33a0d7a"
@@ -130,7 +130,7 @@
         {
             "tag": "🇭🇰ClawHK-AkileHK",
             "type": "shadowsocks",
-            "server": "47.242.139.119",
+            "server": "47.243.243.204",
             "server_port": 59951,
             "method": "chacha20-ietf-poly1305",
             "password": "299b6488-3a0d-4052-9637-98d4e33a0d7a"
@@ -138,7 +138,7 @@
         {
             "tag": "🇺🇸ClawHK-AkileUS",
             "type": "shadowsocks",
-            "server": "47.242.139.119",
+            "server": "47.243.243.204",
             "server_port": 56833,
             "method": "chacha20-ietf-poly1305",
             "password": "299b6488-3a0d-4052-9637-98d4e33a0d7a"
